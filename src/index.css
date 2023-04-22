@@ -3,6 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
+  scroll-behavior: smooth;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -12,4 +14,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+#app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+
+}
+
+.containers {
+  border: 2px solid mediumvioletred;
+  border-radius: 8px;
+  width: 45vw;
+  padding: 10px;
+  height: 90vh;
 }

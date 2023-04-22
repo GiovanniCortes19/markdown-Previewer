@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import Editor from './Components/Editor'
+import Preview from './Components/Preview'
 
 function App() {
 
 
   return (
-    <>
-      <h1>Testing</h1>
-    </>
+    <div id='app-container'>
+      <Editor/>
+      <Preview/>
+    </div>
   )
 }
 
