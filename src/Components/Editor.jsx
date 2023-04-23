@@ -26,7 +26,7 @@ const Editor = () => {
             </header>
             <textarea name="text" id="editor" value={text} onChange={handleChange} ></textarea>
         </div>}
-        {isHidden && <button className='hide-btn' onClick={toggleHidden}>{`< hide`}</button>}
+        {isHidden && <button id='isHidden-btn' className='hide-btn' onClick={toggleHidden}>{`Show editor`}</button>}
         <Preview markdown={text}/>
     </>
   )

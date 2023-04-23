@@ -27,6 +27,7 @@ html, body {
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
+  margin-top: -10px;
 
 }
 
@@ -73,7 +74,7 @@ header {
   background-color: rgba(202, 230, 255, 0.905);
   border-radius: 50px;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   height: 1.7em;
   color: black;
 
@@ -81,6 +82,15 @@ header {
 
 .hide-btn:hover {
   background-color: #303030a3;
+
+}
+
+#isHidden-btn {
+  margin: 0;
+  width: 10%;
+  height: 8%;
+  font-weight: bolder;
+  font-size: large;
 
 }
 
