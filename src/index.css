@@ -55,7 +55,7 @@ textarea {
 
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(109, 201, 231);
   text-transform: uppercase;
@@ -65,6 +65,23 @@ header {
   padding-left: 10px;
   margin-bottom: 10px;
   box-shadow: 3px 5px 7px 2px;
+}
+
+.hide-btn {
+  margin-right: 15px;
+  border: none;
+  background-color: rgba(202, 230, 255, 0.905);
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  height: 1.7em;
+  color: black;
+
+}
+
+.hide-btn:hover {
+  background-color: #303030a3;
+
 }
 
 #preview {

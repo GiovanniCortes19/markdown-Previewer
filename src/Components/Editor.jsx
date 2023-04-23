@@ -2,16 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import Preview from './Preview'
 
-// marked.setOptions({
-//     breaks: true
-// })
-
-// const renderer = new marked.Renderer()
-
 
 const Editor = () => {
 
   const [text, setText] = useState("")
+  const [isHidden, setIsHidden] = useState(false)
+
+  function toggleHidden(){
+    setIsHidden(prev => !prev)
+  }
 
   function handleChange(event){
     const {value} = event.target
@@ -20,12 +19,14 @@ const Editor = () => {
 
   return (
     <>
-        <div id='editor-container' className='containers'>
+        {!isHidden && <div id='editor-container' className='containers'>
             <header id='container-header'>
                 <h2>Editor</h2>
+                <button className='hide-btn' onClick={toggleHidden}>{`< hide`}</button>
             </header>
             <textarea name="text" id="editor" value={text} onChange={handleChange} ></textarea>
-        </div>
+        </div>}
+        {isHidden && <button className='hide-btn' onClick={toggleHidden}>{`< hide`}</button>}
         <Preview markdown={text}/>
     </>
   )
