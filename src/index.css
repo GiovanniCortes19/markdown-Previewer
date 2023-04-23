@@ -31,7 +31,7 @@ html, body {
 }
 
 .containers {
-  border: 2px solid mediumvioletred;
+  border: 2px solid lightblue;
   border-radius: 8px;
   width: 45vw;
   padding: 10px;
@@ -45,11 +45,20 @@ textarea {
   height: 95%;
   background-color: transparent;
   border: none;
+  outline: none;
+  font-size: 1.3em;
+  line-height: 1.6;
 }
 
 header {
   display: flex;
-  justify-content: center;
-  background-color: rgba(215, 29, 147, 0.624);
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(173, 216, 230, 0.876);
   text-transform: uppercase;
+  border-radius: 8px;
+  color: #242424;
+  height: 35px;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
