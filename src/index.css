@@ -31,12 +31,13 @@ html, body {
 }
 
 .containers {
-  border: 2px solid lightblue;
+  border: 2px solid rgba(125, 204, 231, 0.983);
   border-radius: 8px;
   width: 45vw;
   padding: 10px;
   height: 90vh;
   overflow:scroll;
+  background-color: rgba(202, 230, 255, 0.905);
 }
 
 textarea {
@@ -48,17 +49,20 @@ textarea {
   outline: none;
   font-size: 1.3em;
   line-height: 1.6;
+  padding-top: 5px;
+  color: black;
 }
 
 header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(173, 216, 230, 0.876);
+  background-color: rgb(109, 201, 231);
   text-transform: uppercase;
   border-radius: 8px;
   color: #242424;
   height: 35px;
   padding-left: 10px;
   margin-bottom: 10px;
+  box-shadow: 3px 5px 7px 2px;
 }
