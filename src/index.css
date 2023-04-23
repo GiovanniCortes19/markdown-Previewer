@@ -70,3 +70,6 @@ header {
 #preview {
   color: black;
 }
+#preview img {
+  max-width: 90%;
+}

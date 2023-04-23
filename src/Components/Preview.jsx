@@ -13,9 +13,9 @@ const Preview = ({markdown}) => {
         <header id='container-header'>
             <h2>Preview</h2>
         </header>
-        <p id='preview' dangerouslySetInnerHTML={{
+        <div id='preview' dangerouslySetInnerHTML={{
             __html: marked(markdown)
-        }}></p>
+        }}></div>
     </div>
   )
 }
