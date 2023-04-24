@@ -50,11 +50,13 @@ textarea {
   outline: none;
   font-size: 1.3em;
   line-height: 1.6;
-  padding-top: 5px;
+  padding-top: 75px;
   color: black;
 }
 
 header {
+  position: absolute;
+  width: 44%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,6 +98,7 @@ header {
 
 #preview {
   color: black;
+  padding-top: 40px;
 }
 #preview img {
   max-width: 90%;
