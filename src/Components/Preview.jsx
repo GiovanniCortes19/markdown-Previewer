@@ -8,15 +8,27 @@ marked.setOptions({
 const renderer = new marked.Renderer()
 
 const Preview = ({markdown}) => {
+
+  const [isHidden, setIsHidden] = React.useState(false)
+  
+  function toggleHidden(){
+    setIsHidden(prev => !prev)
+  }
+
   return (
-    <div id='preview-container' className='containers'>
-        <header id='container-header'>
-            <h2>Preview</h2>
-        </header>
-        <div id='preview' dangerouslySetInnerHTML={{
-            __html: marked(markdown)
-        }}></div>
-    </div>
+    <>
+      {!isHidden && <div id='preview-container' className='containers'>
+          <header id='container-header'>
+              <h2>Preview</h2>
+              <button className='hide-btn' onClick={toggleHidden}>{`hide`}</button>
+          </header>
+          <div id='preview' dangerouslySetInnerHTML={{
+              __html: marked(markdown)
+          }}></div>
+      </div>}
+      {isHidden && <button id='isHidden-btn' className='hide-btn' onClick={toggleHidden}>show previewer</button>}
+
+    </>
   )
 }
 
